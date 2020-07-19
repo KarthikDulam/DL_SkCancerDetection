@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from sklearn import model_selection
 
+#This logic implements the stratified K fold and splits the input data into 10 folds.
 if __name__ == "__main__":
     input_path = "./DL_SKCANCERDETECTION/"
     df = pd.read.csv(os.path.join(input_path,"train.csv"))
